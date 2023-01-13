@@ -2,8 +2,8 @@ import scrapy
 import csv
 import base64
 
-FILEPATH = 'C:/Users/Ethan Chew/Desktop/Work/Individual Project/Internship/webscraping/'
-FILENAME = 'conventional_and_n26_bank_scraped_data.csv'
+FILEPATH = *file directory*
+FILENAME = *scraped reviews file*
 
 def get_urls_from_csv():
     """Reads the scraped company reviews dataset and returns a list of user url links"""
