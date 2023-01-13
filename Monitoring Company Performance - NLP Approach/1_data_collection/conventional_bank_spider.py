@@ -3,11 +3,7 @@ import scrapy
 # spider to scrape reviews of conventional banks, posted on trustpilot
 class ConventionalBankSpiderXPath(scrapy.Spider):
     name = 'conventional_bank'
-    start_urls = ['https://www.trustpilot.com/review/www.barclays.co.uk',
-                  'https://uk.trustpilot.com/review/www.santander.co.uk',
-                  'https://uk.trustpilot.com/review/www.hsbc.co.uk',
-                  'https://uk.trustpilot.com/review/lloydsbank.com',
-                  'https://uk.trustpilot.com/review/www.natwest.com']  # scraping reviews from various conventional banks
+    start_urls = [*url links to conventional bank pages on trustpilot*]  # scraping reviews from various conventional banks
 
     def parse(self, response):
         """Scrapes a webpage and outputs various components of a review, including the rating (stars), date of review,
