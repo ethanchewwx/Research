@@ -3,10 +3,7 @@ import scrapy
 # spider to scrape reviews of digital banks, posted on trustpilot
 class DigitalBankSpiderXPath(scrapy.Spider):
     name = 'digital_bank'
-    start_urls = ['https://uk.trustpilot.com/review/www.monzo.com',
-                  'https://uk.trustpilot.com/review/starlingbank.com',
-                  'https://uk.trustpilot.com/review/wise.com',
-                  'https://uk.trustpilot.com/review/www.revolut.com']  # scraping reviews from various digital banks
+    start_urls = [*url links to digital challenger bank pages on trustpilot*]  # scraping reviews from various digital banks
 
     def parse(self, response):
         """Scrapes a webpage and outputs various components of a review, including the rating (stars), date of review,
